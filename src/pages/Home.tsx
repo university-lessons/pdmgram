@@ -1,12 +1,12 @@
 import React from "react";
-import { StyleSheet, View, ScrollView } from "react-native";
+import { ScrollView, StyleSheet, View } from "react-native";
 
 import Header from "../components/Header";
 import Post from "../components/Post";
-import YourStory from "../components/YourStory";
 import Story from "../components/Story";
+import YourStory from "../components/YourStory";
 
-export default function Home(props) {
+export default function Home() {
   return (
     <View style={styles.container}>
       <Header />

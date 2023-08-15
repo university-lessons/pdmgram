@@ -1,31 +1,32 @@
-import React from 'react';
-import { StyleSheet, View, Image, Text } from 'react-native';
+import React from "react";
+import { StyleSheet, View, Image, Text } from "react-native";
 
-export default function PostFooter(props) {
+export default function PostFooter() {
   return (
     <View>
       <View style={styles.container}>
-        
         <Image
           style={styles.action}
-          source={require("../../../assets/images/ic_heart.png")} />
+          source={require("../../../assets/images/ic_heart.png")}
+        />
         <Image
           style={styles.action}
-          source={require("../../../assets/images/ic_comment.png")} />
+          source={require("../../../assets/images/ic_comment.png")}
+        />
         <Image
           style={styles.action}
-          source={require("../../../assets/images/ic_send.png")} />
+          source={require("../../../assets/images/ic_send.png")}
+        />
 
-        <View style={{flexGrow: 1}}/>
+        <View style={{ flexGrow: 1 }} />
 
         <Image
           style={styles.action}
-          source={require("../../../assets/images/ic_save.png")} />
-
+          source={require("../../../assets/images/ic_save.png")}
+        />
       </View>
 
       <View style={styles.commentsContainer}>
-
         <View style={styles.txtContainer}>
           <Text>Curtido por </Text>
           <Text style={styles.txtBold}>vw</Text>
@@ -40,7 +41,7 @@ export default function PostFooter(props) {
           <Text> </Text>
           <Text style={styles.hashtag}>#AirCooledSQN</Text>
           <Text> </Text>
-          Pra quem pediu, está aí o besouro repousando no fim de tarde... 
+          Pra quem pediu, está aí o besouro repousando no fim de tarde...
         </Text>
       </View>
     </View>
@@ -49,33 +50,31 @@ export default function PostFooter(props) {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
+    flexDirection: "row",
     marginTop: 1,
-    backgroundColor: 'white',
+    backgroundColor: "white",
   },
-
-  //actions could be groped to avoid the empty View with flexGrow
 
   action: {
     margin: 8,
   },
 
   commentsContainer: {
-    flexDirection: 'column',
+    flexDirection: "column",
     marginHorizontal: 8,
-  },  
+  },
 
   txtContainer: {
-    flexDirection: 'row',
+    flexDirection: "row",
     marginBottom: 8,
-    flexWrap: 'wrap',
+    flexWrap: "wrap",
   },
 
   txtBold: {
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
 
   hashtag: {
-    color: 'rgb(50,50,100)',
-  }
+    color: "rgb(50,50,100)",
+  },
 });

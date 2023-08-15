@@ -1,7 +1,7 @@
 import React from "react";
-import { StyleSheet, Text, Image, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 
-export default function Home(props) {
+export default function Home() {
   return (
     <View style={styles.container}>
       <View style={styles.profile}>

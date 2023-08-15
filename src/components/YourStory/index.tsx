@@ -1,8 +1,8 @@
-import React from "react";
-import { StyleSheet, Text, Image, View } from "react-native";
 import { Entypo } from "@expo/vector-icons";
+import React from "react";
+import { Image, StyleSheet, Text, View } from "react-native";
 
-export default function YourStory(props) {
+export default function YourStory() {
   return (
     <View style={styles.container}>
       <Image

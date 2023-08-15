@@ -1,17 +1,19 @@
-import React from 'react';
-import { StyleSheet, Image, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, Image, Text, View } from "react-native";
 
-export default function Story(props) {
+export default function Story() {
   return (
     <View style={styles.container}>
       <Image
         style={styles.storyBackground}
-        source={require("../../../assets/images/story_background.png")} />
+        source={require("../../../assets/images/story_background.png")}
+      />
 
       <View style={styles.storyProfileImgBorder}>
         <Image
           style={styles.storyProfileImg}
-          source={require("../../../assets/images/profile1.png")} />
+          source={require("../../../assets/images/profile1.png")}
+        />
       </View>
 
       <Text style={styles.profileName}>fusca</Text>
@@ -21,8 +23,8 @@ export default function Story(props) {
 
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'column',
-    alignItems: 'center',
+    flexDirection: "column",
+    alignItems: "center",
     margin: 8,
   },
 
@@ -30,14 +32,14 @@ const styles = StyleSheet.create({
     width: 54,
     height: 54,
     borderRadius: 50,
-  }, 
+  },
 
   storyProfileImgBorder: {
-    position: 'absolute',
+    position: "absolute",
     width: 50,
     height: 50,
     top: 2,
-    backgroundColor: 'white',
+    backgroundColor: "white",
     borderRadius: 50,
   },
 
@@ -51,7 +53,7 @@ const styles = StyleSheet.create({
 
   profileName: {
     fontSize: 12,
-    color: '#444',
+    color: "#444",
     marginTop: 2,
   },
 });
